@@ -14,16 +14,13 @@ function campaignNumber(age, sex, married){
     var sex = input (sex)
     var married = input (married)
     
-    if(age >= 30 && sex == 1 && married == true) {
+    if(age >= 30 && sex == 1 && married) {
      return 1;   
-    }
-    else if(20 <= age > 30 && sex == 0 && married == false) {
+    } else if(age >= 20 && age > 30 && sex == 0 && !married) {
        return 2;
-    }
-    else if(sex == 0 && married == true){
+    }else if(sex == 0 && married){
         return 3;
-    }
-    else{
+    } else{
         return 4;
     }
 
