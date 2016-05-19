@@ -15,15 +15,15 @@ function campaignNumber(age, sex, married){
     var married = input (married)
     
     if(age >= 30 && sex == 1 && married == true) {
-      CAMPAIGN_MARRIED_MALE(show"1");   
+     return 1;   
     }
     if(20 <= age > 30 && sex == 0 && married == false) {
-        CAMPAIGN_UNMARRIED_FEMALE(show"2");
+       return 2;
     }
     if(sex == 0 && married == true){
-        CAMPAIGN_MARRIED_FEMALE(show"3")
+        return 3;
     }
     else{
-        CAMPAIN_OTHERS(show"4")
+        return 4;
     }
 
